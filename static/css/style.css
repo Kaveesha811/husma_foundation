@@ -1,0 +1,247 @@
+/* Modern CSS for Husma Foundation */
+:root {
+    --primary: #2E86AB;
+    --primary-dark: #1B5E7A;
+    --primary-light: #4FA8D0;
+    --secondary: #F8F9FA;
+    --accent: #FF6B6B;
+    --success: #28A745;
+    --warning: #FFC107;
+    --danger: #DC3545;
+    --text: #333333;
+    --text-light: #666666;
+    --border: #E0E0E0;
+    --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Main container */
+.main {
+    background-color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Header styles */
+.header {
+    background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+    color: white;
+    padding: 2rem;
+    border-radius: 15px;
+    margin-bottom: 2rem;
+    text-align: center;
+    box-shadow: var(--shadow);
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.header p {
+    margin: 0.5rem 0 0 0;
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+/* Card styles */
+.card {
+    background: white;
+    border-radius: 15px;
+    padding: 1.5rem;
+    box-shadow: var(--shadow);
+    border: 1px solid var(--border);
+    margin-bottom: 1rem;
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.card h3 {
+    color: var(--primary);
+    margin-top: 0;
+    border-bottom: 2px solid var(--primary);
+    padding-bottom: 0.5rem;
+}
+
+/* Metric cards */
+.metric-card {
+    background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+    color: white;
+    padding: 1.5rem;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: var(--shadow);
+}
+
+.metric-card h3 {
+    font-size: 1.8rem;
+    margin: 0;
+    border: none;
+    color: white;
+}
+
+.metric-card p {
+    margin: 0.5rem 0 0 0;
+    opacity: 0.9;
+}
+
+/* Button styles */
+.stButton>button {
+    border-radius: 10px;
+    font-weight: 600;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    transition: all 0.3s ease;
+    font-size: 1rem;
+}
+
+.stButton>button:focus {
+    box-shadow: 0 0 0 2px var(--primary-light);
+}
+
+.primary-btn {
+    background: var(--primary) !important;
+    color: white !important;
+}
+
+.primary-btn:hover {
+    background: var(--primary-dark) !important;
+    transform: translateY(-1px);
+}
+
+.success-btn {
+    background: var(--success) !important;
+    color: white !important;
+}
+
+.warning-btn {
+    background: var(--warning) !important;
+    color: black !important;
+}
+
+/* Navigation */
+.sidebar .sidebar-content {
+    background: var(--secondary);
+    padding: 1rem;
+}
+
+.nav-item {
+    padding: 0.75rem 1rem;
+    margin: 0.25rem 0;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: none;
+    background: white;
+    width: 100%;
+    text-align: left;
+    font-weight: 500;
+    color: var(--text);
+}
+
+.nav-item:hover {
+    background: var(--primary);
+    color: white;
+    transform: translateX(5px);
+}
+
+.nav-item.active {
+    background: var(--primary);
+    color: white;
+}
+
+/* Form styles */
+.stTextInput>div>div>input {
+    border-radius: 10px;
+    border: 2px solid var(--border);
+    padding: 0.75rem;
+    font-size: 1rem;
+}
+
+.stTextInput>div>div>input:focus {
+    border-color: var(--primary);
+    box-shadow: 0 0 0 2px rgba(46, 134, 171, 0.2);
+}
+
+.stSelectbox>div>div>div {
+    border-radius: 10px;
+    border: 2px solid var(--border);
+}
+
+/* Product cards */
+.product-card {
+    border: 1px solid var(--border);
+    border-radius: 15px;
+    padding: 1.5rem;
+    margin: 1rem 0;
+    background: white;
+    transition: all 0.3s ease;
+}
+
+.product-card:hover {
+    border-color: var(--primary);
+    box-shadow: 0 4px 12px rgba(46, 134, 171, 0.1);
+}
+
+.product-card h4 {
+    color: var(--primary);
+    margin-top: 0;
+}
+
+/* Status badges */
+.status-good {
+    color: var(--success);
+    font-weight: 600;
+}
+
+.status-warning {
+    color: var(--warning);
+    font-weight: 600;
+}
+
+.status-danger {
+    color: var(--danger);
+    font-weight: 600;
+}
+
+/* Alert boxes */
+.alert-success {
+    background: #d4edda;
+    border: 1px solid #c3e6cb;
+    color: #155724;
+    padding: 1rem;
+    border-radius: 10px;
+    margin: 1rem 0;
+}
+
+.alert-error {
+    background: #f8d7da;
+    border: 1px solid #f5c6cb;
+    color: #721c24;
+    padding: 1rem;
+    border-radius: 10px;
+    margin: 1rem 0;
+}
+
+.alert-info {
+    background: #d1ecf1;
+    border: 1px solid #bee5eb;
+    color: #0c5460;
+    padding: 1rem;
+    border-radius: 10px;
+    margin: 1rem 0;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .header h1 {
+        font-size: 2rem;
+    }
+
+    .metric-card h3 {
+        font-size: 1.5rem;
+    }
+}
